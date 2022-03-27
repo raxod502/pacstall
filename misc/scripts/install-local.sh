@@ -566,6 +566,7 @@ fi
 trap - SIGINT
 
 fancy_message info "Installing"
+type install
 if ! install; then
 	error_log 14 "install $PACKAGE"
 	fancy_message error "Could not install $PACKAGE properly"
